@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url(../public/styles/backToTop.css); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* Base Styles */
+:root {
+  --primary-purple: #6a0dad;
+  --dark-purple: #4b0082;
+  --light-purple: #9370db;
+  --milk: #fffaf0;
+  --gold: #ffd700;
+  --black: #121212;
+  --glass: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--black);
+  color: var(--milk);
+  overflow-x: hidden;
+  width: 100%;
+  background-image: url("/assets/images/hairbg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right center;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--milk);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  word-wrap: break-word;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
