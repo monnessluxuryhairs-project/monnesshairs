@@ -9,6 +9,7 @@ export default {
           "50%": { backgroundPosition: "100% 100%" },
           "100%": { backgroundPosition: "0% 0%" },
         },
+        
         fadeInUp: {
           "0%": {
             opacity: "0",
@@ -25,6 +26,7 @@ export default {
         gradientShift: "gradientShift 15s ease infinite",
         fadeInUp: "fadeInUp 1s cubic-bezier(0.175,0.885,0.32,1.275) forwards",
       },
+      
 
       colors: {
         gold: "#ffd700",

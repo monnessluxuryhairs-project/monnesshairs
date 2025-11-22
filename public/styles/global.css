@@ -50,21 +50,30 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.35s ease forwards;
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.45s ease forwards;
 }
 
 @keyframes floatIn {
@@ -186,4 +195,163 @@
 .mobile-cart-btn .cart-count {
   top: -5px;
   right: -5px;
+}
+
+/* about hero section */
+
+/* Background gradient of the hero */
+.about-hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(106, 13, 173, 0.8),
+    rgba(0, 0, 0, 0.9)
+  );
+  z-index: -1;
+}
+
+/* Gradient title text */
+.about-title-gradient {
+  background: linear-gradient(
+    45deg,
+    var(--gold),
+    var(--light-purple),
+    var(--milk)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Floating hair base */
+.floating-hair {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Hair positions + animations */
+.hair-1 {
+  background-image: url("/hair1.png");
+  top: 20%;
+  left: 10%;
+  animation: fadeIn 1s ease forwards 0.9s, float 15s infinite linear 0.9s;
+}
+
+.hair-2 {
+  background-image: url("/hair2.png");
+  top: 30%;
+  right: 15%;
+  animation: fadeIn 1s ease forwards 1.2s, floatReverse 18s infinite linear 1.2s;
+}
+
+.hair-3 {
+  background-image: url("/hair3.png");
+  bottom: 20%;
+  left: 15%;
+  animation: fadeIn 1s ease forwards 1.5s, float 20s infinite linear 1.5s;
+}
+
+.hair-4 {
+  background-image: url("/hair4.png");
+  bottom: 25%;
+  right: 10%;
+  animation: fadeIn 1s ease forwards 1.8s, floatReverse 17s infinite linear 1.8s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes floatReverse {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(20px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* founder section */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Tailwind animation utilities */
+.animate-fadeInDelay {
+  animation: fadeIn 1s ease forwards 0.3s, pulse 2s infinite 1.3s;
+}
+
+.animate-fadeInUpDelay2 {
+  animation: fadeInUp 1s ease forwards 0.6s;
+}
+
+.animate-fadeInUpDelay3 {
+  animation: fadeInUp 1s ease forwards 0.9s;
+}
+
+.animate-fadeInUpDelay4 {
+  animation: fadeInUp 1s ease forwards 1.2s;
 }

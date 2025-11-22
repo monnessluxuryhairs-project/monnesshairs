@@ -1,0 +1,26 @@
+export const categoriesData = [
+  {
+    title: "Hair Extensions",
+    image:
+      "https://img.freepik.com/premium-photo/beautiful-brownhaired-girl-with-perfectly-curls-hair-classic-makeup-beauty-face-hair_151428-3744.jpg",
+    link: "/shop?category=extensions",
+  },
+  {
+    title: "Wigs",
+    image:
+      "https://img.freepik.com/premium-photo/beautiful-brownhaired-girl-with-perfectly-curls-hair-classic-makeup-beauty-face-hair_151428-3610.jpg",
+    link: "/shop?category=wigs",
+  },
+  {
+    title: "Closures",
+    image:
+      "https://img.freepik.com/premium-photo/beautiful-brownhaired-girl-with-perfectly-curls-hair-classic-makeup_151428-883.jpg?w=360",
+    link: "/shop?category=closures",
+  },
+  {
+    title: "Frontals",
+    image:
+      "https://img.freepik.com/premium-photo/beautiful-brownhaired-girl-with-perfectly-curls-hair-classic-makeup_151428-881.jpg?w=360",
+    link: "/shop?category=frontals",
+  },
+];

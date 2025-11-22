@@ -56,9 +56,7 @@ const FeaturedProducts = ({ onAdd = () => {} }) => {
                 }s`,
               }}
             >
-              <div className="w-full h-[300px] md:h-[400px] overflow-hidden shadow-xl transition-all duration-500
-    hover:shadow-[0_0_55px_rgba(0,0,0,0.6)]
-    hover:-translate-y-2">
+              <div className="w-full h-[300px] md:h-[400px] overflow-hidden shadow-xl">
                 <img
                   src={p.image}
                   alt={p.title}
